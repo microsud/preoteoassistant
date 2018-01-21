@@ -31,7 +31,6 @@ shinyUI(fluidPage(
     
     mainPanel(
       h3(textOutput("result1")),
-      h3(textOutput("result2")),
       h3(textOutput("result3"))
     ))
 ))

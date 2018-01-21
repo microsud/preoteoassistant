@@ -16,18 +16,6 @@ shinyServer(function(input, output) {
     
     })
   
-  output$result2 <- renderText({
-    
-    if (!is.na(input$inputCon)){
-      print("Please type a value")
-    }
-    sampleloading <- (input$expcon/input$inputCon)*1000
-    ldbuf<- sampleloading/input$lodingbuf
-    two <- paste0(" Loading buffer (µl): ", round(ldbuf, 3))
-    
-    
-  })
-  
   output$result3 <- renderText({
     
     sampleloading <- (input$expcon/input$inputCon)*1000
